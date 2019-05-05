@@ -1,12 +1,31 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/basket/basket",
+    "pages/review/review",
+    "pages/others/others",
+    "pages/userinfo/userinfo"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#333333",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/basket/basket",
+        "text": "basket"
+      },
+      {
+        "pagePath": "pages/review/review",
+        "text": "review"
+      },
+      {
+        "pagePath": "pages/others/others",
+        "text": "others"
+      },
+      {
+        "pagePath": "pages/userinfo/userinfo",
+        "text": "userinfo"
+      }
+    ]
   }
 }
