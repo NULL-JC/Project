@@ -1,2 +1,6 @@
 <!--pages/basket/basket.wxml-->
 <text>工作篮来啦</text>
+<view>
+<textarea show-confirm-bar='true'></textarea>
+<button>提交</button>
+</view>
