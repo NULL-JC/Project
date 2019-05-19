@@ -1,15 +1,43 @@
 <!--pages/basket/basket.wxml-->
 <!-- <text>工作篮来啦</text> -->
-<text>这里是工作篮，请输入临时事务</text>
-<view>
-<textarea show-confirm-bar='true'></textarea>
-<button>提交</button>
-<button>安排</button>
-</view>
+<!-- <text>这里是工作篮，请输入临时事务</text> -->
+<van-col span="22" offset="2">这里是工作篮，请输入临时事务</van-col>
+<van-cell-group>
+<van-field
+    value="{{ sms }}"
+    value="{{ message }}"
+    autosize
+    type="textarea"
+    placeholder="输入灵感或紧急的事"
+    use-button-slot>
+    <van-button slot="button" size="small" type="primary">提交</van-button>
+    <van-button slot="button" size="small" type="primary">安排</van-button>
+</van-field>
+</van-cell-group>
 
-<view>
+<!-- <view>
 </view>
 <view>
 <text>工作篮事务</text>
 <text>今日任务</text>
-</view>
+</view> -->
+
+<van-row>工作篮事务</van-row>
+<van-cell-group>
+ <van-cell title="题目" label="笔记内容" border="{{false}}"/>
+ <van-popup
+  show="{{ show }}"
+  position="top"
+  overlay="{{ false }}"
+  bind:close="onClose"
+>
+  内容
+</van-popup>
+ <van-cell title="题目" label="笔记内容" border="{{false}}"/>
+ <van-cell title="题目" label="笔记内容" border="{{false}}"/>
+</van-cell-group>
+<van-row>今日任务</van-row>
+<van-cell-group>
+ <van-cell title="题目" label="笔记内容" border="{{false}}"/>
+ <van-cell title="题目" label="笔记内容" border="{{false}}"/>
+</van-cell-group>

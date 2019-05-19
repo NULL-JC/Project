@@ -29,4 +29,13 @@
     ]
   },
   "sitemapLocation": "sitemap.json"
+  ,
+  "usingComponents":{
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+    "van-field": "dist/field/index",
+    "van-row": "dist/row/index",
+    "van-col": "dist/col/index",
+    "van-popup": "dist/popup/index"
+  }
 }
