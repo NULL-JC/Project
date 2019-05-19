@@ -1,6 +1,15 @@
 <!--pages/basket/basket.wxml-->
-<text>工作篮来啦</text>
+<!-- <text>工作篮来啦</text> -->
+<text>这里是工作篮，请输入临时事务</text>
 <view>
 <textarea show-confirm-bar='true'></textarea>
 <button>提交</button>
+<button>安排</button>
+</view>
+
+<view>
+</view>
+<view>
+<text>工作篮事务</text>
+<text>今日任务</text>
 </view>
